@@ -1,0 +1,67 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
+:root{--primary:hsl(0, 0%, 100%); --second:hsl(212, 45%, 89%); --third:hsl(220, 15%, 55%);--four:hsl(218, 44%, 22%);}
+body{
+    background: var(--second);
+    font-family: 'Outfit', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+section{
+    background: var(--primary);
+    width: 20%;
+    height: auto;
+    margin: 25px auto;
+    padding: 5px;
+    border-radius: 15px;
+}
+.container{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.container-image img{
+    width: 90%;
+    margin:5px auto;
+    border-radius: 15px;
+    display: block;
+    margin: auto;
+    padding-top: 5px;
+}
+.container-texto{
+    width: 90%;
+    margin: 25px auto;
+    padding: 0px;
+    text-align: center;
+}
+.container-texto h1{
+    font-size: 18px;
+    font-weight: 700 bold;
+    color: var(--four);   
+}
+.container-texto h3{
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--third);
+}
+
+@media (min-width:654px) and (max-width:1070px){
+    .section{width: 40%;}
+    .container{width: 100%;height: auto;}
+    .container-texto{width: 85%;margin: 25px auto; font-weight: 700 bold;}
+}
+@media (min-width:376px) and (max-width:653px){
+    .section{width: 80%;}
+    .container{width: 100%;height: auto;}
+    .container-texto{width: 85%;margin: 25px auto; font-weight: 700 bold;}
+}
+@media (min-width:200px) and (max-width:375px){
+    .section{width: 80%;}
+    .container{width: 100%;height: auto;}
+    .container-texto{width: 85%;margin: 25px auto; font-weight: 700 bold;}
+}
